@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="arktop.ru.myapplication.Draw3DActivity">
+
+    <!--<FrameLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginTop="165dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:id="@+id/camera_preview"-->
+        <!--android:layout_width="320dp"-->
+        <!--android:layout_height="240dp" />-->
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingBottom="15dp"
+            android:id="@+id/buttonsContollPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/axesB"
+                android:layout_width="95dp"
+                android:textSize="11sp"
+                android:text="AXES"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/vertexB"
+                android:layout_width="95dp"
+                android:textSize="11sp"
+                android:text="VERTEXES"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/figureB"
+                android:layout_width="95dp"
+                android:textSize="11sp"
+                android:text="FIGURE"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="10dp"
+            android:id="@+id/buttonsX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/plusX"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@android:color/transparent"
+                android:text="X+" />
+
+            <Button
+                android:id="@+id/minusX"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@android:color/transparent"
+                android:text="X-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height">
+
+            <Button
+                android:id="@+id/plusY"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@android:color/transparent"
+                android:text="Y+" />
+
+            <Button
+                android:id="@+id/minusY"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@android:color/transparent"
+                android:text="Y-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/plusZ"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@android:color/transparent"
+                android:text="Z+" />
+
+            <Button
+                android:id="@+id/minusZ"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@android:color/transparent"
+                android:text="Z-" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
